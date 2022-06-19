@@ -23,7 +23,7 @@ html{
     box-shadow: 1px 1px 15px 5px rgb(67, 67, 70);
     background-color: rgb(49, 29, 39);
     width: 300px;
-    height: 500px;
+    height: 550px;
     border-radius: 5%;
 }
 
@@ -68,9 +68,13 @@ html{
 
 .btn_login:hover{
     font-size: 100%;
-    background-color: #330033;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(46, 31, 31);
+    border-radius: 5%;
+    margin-top: 10px;
+    padding: 5px 40px;
     border: 1px solid white;
+    font-weight: bold;
     
 }
 
@@ -82,10 +86,140 @@ html{
     background-color:rgb(110, 108, 108);
 }
 
-.creater_account{
+.other_login{
     margin-top: 0;
     color: white;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
+}
+@media (min-width: 784px){
+
+.socialmedia{
+    color: aliceblue;
+    margin-top: 30px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+}
+
+    *:focus,
+    *:active {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+    }
+
+    html,
+    body {
+    display: grid;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    place-items: center;
+    }
+
+    .socialmedia {
+    display: inline-flex;
+    list-style: none;
+    }
+
+    .socialmedia .icon {
+        box-sizing: border-box;
+        position: relative;
+        border-radius: 50%;
+        padding: 15px;
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .socialmedia .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .socialmedia .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .socialmedia .icon:hover .tooltip {
+    top: 55px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    }
+
+    .socialmedia .icon:hover span,
+    .socialmedia .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .socialmedia .google:hover,
+    .socialmedia .google:hover .tooltip,
+    .socialmedia .google:hover .tooltip::before {
+    background: #29303a;
+    color: #ffffff;
+    }
+
+    .socialmedia .github:hover,
+    .socialmedia .github:hover .tooltip,
+    .socialmedia .github:hover .tooltip::before {
+    background: #333333;
+    color: #ffffff;
+    }
+}
+
+.register{
+    margin-top: 40px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltip{
+    opacity: 0;
+    list-style: none;
+
+}
+
+.socialmedia{
+    color: aliceblue;
+    margin-top: 30px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.socialmedia {
+    list-style: none;
 }
