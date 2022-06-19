@@ -11,7 +11,7 @@ html{
     justify-content: center;
     align-items: center;
     width: 95vw;
-    height: 95vh;
+    height: 85vh;
     color: aliceblue;
     overflow: hidden;
 }
@@ -130,6 +130,10 @@ html{
         margin-top: 40px;
         color: #ffffff;
         text-decoration: none;
+    }
+    .container{
+        width: 95vw;
+    height: 95vh;
     }
     
 .form_box{
